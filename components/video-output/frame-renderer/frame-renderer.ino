@@ -6,6 +6,9 @@
 #define TFT_CS     8
 #define TFT_RST    7
 #define TFT_DC     6
+#define INPUT_DATA 9
+#define INPUT_CLOCK 10
+#define INPUT_LATCH 12
 
 const byte interruptPin = 2;
 const byte color1bit = A3;
@@ -15,7 +18,8 @@ const byte color4bit = A0;
 
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS,  TFT_DC, TFT_RST);
 
-byte frameBuffer[32][32];
+volatile byte frameBuffer[32][32];
+volatile byte addressValue = 0;
 
 const uint16_t colorMap[] = {
     0x0000,
@@ -37,6 +41,10 @@ const uint16_t colorMap[] = {
 };
 
 void setup() {
+    // Init input
+    pinMode(INPUT_DATA, INPUT);
+    pinMode(INPUT_LATCH, OUTPUT);
+    pinMode(INPUT_CLOCK, OUTPUT); 
     // Init serial
     Serial.begin(9600);
     Serial.println("Hello! mx01 gpu");
@@ -68,7 +76,34 @@ byte boolArrayToByte(boolean* bits){
     return ret;
 }
 
+uint8_t fixedShiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder) {
+	uint8_t value = 0;
+	uint8_t i;
+
+	for (i = 0; i < 8; ++i) {
+		digitalWrite(clockPin, LOW);
+		if (bitOrder == LSBFIRST)
+			value |= digitalRead(dataPin) << i;
+		else
+			value |= digitalRead(dataPin) << (7 - i);
+		digitalWrite(clockPin, HIGH);
+	}
+	return value;
+}
+
 void updateFramebuffer() {
+    // read from register
+    digitalWrite(INPUT_LATCH, 1);
+    delayMicroseconds(20);
+
+    //Set latch pin to 0 to get data from the CD4021
+    digitalWrite(INPUT_LATCH, 0);
+
+    //Get CD4021 register data in byte variable
+    addressValue = fixedShiftIn(INPUT_DATA, INPUT_CLOCK, MSBFIRST);
+    Serial.print(addressValue);
+    Serial.print("-");
+    Serial.println(addressValue, BIN);
     const boolean bit1 = digitalRead(color1bit);
     const boolean bit2 = digitalRead(color2bit);
     const boolean bit3 = digitalRead(color3bit);
