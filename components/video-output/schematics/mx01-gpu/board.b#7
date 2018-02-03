@@ -162,8 +162,6 @@
 <wire x1="87" y1="0" x2="87" y2="79" width="0" layer="20"/>
 <wire x1="87" y1="79" x2="0" y2="79" width="0" layer="20"/>
 <wire x1="0" y1="79" x2="0" y2="0" width="0" layer="20"/>
-<text x="58" y="6" size="1.778" layer="1">mx01-video-component</text>
-<text x="77" y="3" size="1.778" layer="1">v0.0.1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -571,36 +569,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="20.066" y1="-0.254" x2="20.574" y2="0.254" layer="51"/>
 <rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
 <rectangle x1="35.306" y1="-0.254" x2="35.814" y2="0.254" layer="51"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-<package name="1X02">
-<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
@@ -1051,32 +1019,18 @@ design rules under a new name.</description>
 <element name="R5" library="SparkFun-Resistors" package="AXIAL-0.3" value="200" x="37" y="37" rot="R90">
 <attribute name="PROD_ID" value=" " x="87.8" y="64.94" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="S1" library="SparkFun-Retired" package="TACTILE-PTH" value="" x="49" y="27" rot="R90"/>
-<element name="COLOR_IN" library="SparkFun-Connectors" package="1X05" value="" x="9" y="58" rot="R90"/>
+<element name="S1" library="SparkFun-Retired" package="TACTILE-PTH" value="" x="45" y="27"/>
+<element name="COLOR_IN" library="SparkFun-Connectors" package="1X05" value="" x="9" y="62" rot="R90"/>
 <element name="SHIFT_MASTER" library="40xx" package="DIL16" value="4021N" x="14" y="49"/>
 <element name="SHIFT_SLAVE" library="40xx" package="DIL16" value="4021N" x="38" y="49"/>
-<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-10MM" value="10nF" x="30" y="10">
-<attribute name="PROD_ID" value="CAP-09321" x="69.37" y="-40.8" size="1.778" layer="27" display="off"/>
+<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-10MM" value="10nF" x="74" y="50">
+<attribute name="PROD_ID" value="CAP-09321" x="113.37" y="-0.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="ADDRESS_IN" library="SparkFun-Connectors" package="2X8" value="" x="5" y="58" rot="R90"/>
-<element name="ADDRESS_OUT" library="SparkFun-Connectors" package="2X8" value="" x="80" y="58" rot="R90"/>
-<element name="COLOR_OUT" library="SparkFun-Connectors" package="1X05" value="" x="84" y="58" rot="R90"/>
+<element name="ADDRESS_OUT" library="SparkFun-Connectors" package="2X8" value="" x="83" y="58" rot="R90"/>
+<element name="COLOR_OUT" library="SparkFun-Connectors" package="1X05" value="" x="75" y="62" rot="R90"/>
 <element name="ARD_LFT" library="SparkFun-Connectors" package="1X15" value="" x="2" y="2"/>
 <element name="ARD_RLT" library="SparkFun-Connectors" package="1X15" value="" x="2" y="18"/>
-<element name="R6" library="SparkFun-Resistors" package="AXIAL-0.3" value="10k" x="6" y="14">
-<attribute name="PROD_ID" value="RES-09435" x="6" y="14" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R7" library="SparkFun-Resistors" package="AXIAL-0.3" value="10k" x="6" y="6">
-<attribute name="PROD_ID" value="RES-09435" x="6" y="6" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R8" library="SparkFun-Resistors" package="AXIAL-0.3" value="10k" x="17" y="14">
-<attribute name="PROD_ID" value="RES-09435" x="17" y="14" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R9" library="SparkFun-Resistors" package="AXIAL-0.3" value="10k" x="17" y="6">
-<attribute name="PROD_ID" value="RES-09435" x="17" y="6" size="1.778" layer="27" display="off"/>
-</element>
-<element name="POWER" library="SparkFun-Connectors" package="1X02" value="" x="9" y="76" rot="R270"/>
-<element name="POWER_OUT" library="SparkFun-Connectors" package="1X02" value="" x="84" y="76" rot="R270"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -1093,13 +1047,9 @@ design rules under a new name.</description>
 <contactref element="SHIFT_MASTER" pad="16"/>
 <contactref element="SHIFT_SLAVE" pad="16"/>
 <contactref element="ARD_RLT" pad="15"/>
-<contactref element="POWER" pad="1"/>
-<contactref element="POWER_OUT" pad="1"/>
-<wire x1="5.11" y1="52.81" x2="9" y2="76" width="0" layer="19" extent="1-1"/>
-<wire x1="29.11" y1="52.81" x2="5.11" y2="52.81" width="0" layer="19" extent="1-1"/>
-<wire x1="37.56" y1="18" x2="29.11" y2="52.81" width="0" layer="19" extent="1-1"/>
-<wire x1="25" y1="10" x2="37.56" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="84" y1="76" x2="25" y2="10" width="0" layer="19" extent="1-1"/>
+<wire x1="69" y1="50" x2="37.56" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="29.11" y1="52.81" x2="69" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="5.11" y1="52.81" x2="29.11" y2="52.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="C1" pad="2"/>
@@ -1112,27 +1062,15 @@ design rules under a new name.</description>
 <contactref element="R3" pad="P$1"/>
 <contactref element="R4" pad="P$1"/>
 <contactref element="R5" pad="P$1"/>
-<contactref element="R9" pad="P$1"/>
-<contactref element="R8" pad="P$1"/>
-<contactref element="R7" pad="P$1"/>
-<contactref element="R6" pad="P$1"/>
-<contactref element="POWER" pad="2"/>
-<contactref element="POWER_OUT" pad="2"/>
-<wire x1="46.89" y1="45.19" x2="78.92" y2="42" width="0" layer="19" extent="1-1"/>
-<wire x1="37" y1="33.19" x2="46.89" y2="45.19" width="0" layer="19" extent="1-1"/>
-<wire x1="26" y1="40.81" x2="37" y2="33.19" width="0" layer="19" extent="1-1"/>
-<wire x1="22.89" y1="45.19" x2="26" y2="40.81" width="0" layer="19" extent="1-1"/>
-<wire x1="19" y1="33.19" x2="26" y2="40.81" width="0" layer="19" extent="1-1"/>
-<wire x1="12" y1="33.19" x2="19" y2="33.19" width="0" layer="19" extent="1-1"/>
-<wire x1="5" y1="40.81" x2="12" y2="33.19" width="0" layer="19" extent="1-1"/>
-<wire x1="35.02" y1="18" x2="37" y2="33.19" width="0" layer="19" extent="1-1"/>
-<wire x1="35" y1="10" x2="35.02" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="13.19" y1="14" x2="12" y2="33.19" width="0" layer="19" extent="1-1"/>
-<wire x1="13.19" y1="6" x2="13.19" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="2.19" y1="14" x2="13.19" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="2.19" y1="6" x2="2.19" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="73.46" x2="22.89" y2="45.19" width="0" layer="19" extent="1-1"/>
-<wire x1="84" y1="73.46" x2="2.19" y2="6" width="0" layer="19" extent="1-1"/>
+<wire x1="26" y1="40.81" x2="35.02" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="37" y1="33.19" x2="26" y2="40.81" width="0" layer="19" extent="1-1"/>
+<wire x1="79" y1="50" x2="37" y2="33.19" width="0" layer="19" extent="1-1"/>
+<wire x1="5" y1="40.81" x2="79" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="12" y1="33.19" x2="5" y2="40.81" width="0" layer="19" extent="1-1"/>
+<wire x1="19" y1="33.19" x2="12" y2="33.19" width="0" layer="19" extent="1-1"/>
+<wire x1="78.92" y1="42" x2="79" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="46.89" y1="45.19" x2="5" y2="40.81" width="0" layer="19" extent="1-1"/>
+<wire x1="22.89" y1="45.19" x2="46.89" y2="45.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="ARD_RLT" pad="9"/>
@@ -1212,9 +1150,9 @@ design rules under a new name.</description>
 <contactref element="SW2" pad="2"/>
 <contactref element="SW2" pad="1"/>
 <contactref element="S1" pad="3"/>
-<wire x1="51.2606" y1="23.7488" x2="84" y2="42" width="0" layer="19" extent="1-1"/>
-<wire x1="29.94" y1="18" x2="51.2606" y2="23.7488" width="0" layer="19" extent="1-1"/>
-<wire x1="42.19" y1="6.19" x2="29.94" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="84" y1="42" x2="29.94" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="41.7488" y1="24.7394" x2="84" y2="42" width="0" layer="19" extent="1-1"/>
+<wire x1="42.19" y1="6.19" x2="41.7488" y2="24.7394" width="0" layer="19" extent="1-1"/>
 <wire x1="44.73" y1="6.19" x2="42.19" y2="6.19" width="0" layer="19" extent="1-1"/>
 <wire x1="47.27" y1="6.19" x2="44.73" y2="6.19" width="0" layer="19" extent="1-1"/>
 <wire x1="49.81" y1="6.19" x2="47.27" y2="6.19" width="0" layer="19" extent="1-1"/>
@@ -1225,12 +1163,10 @@ design rules under a new name.</description>
 <contactref element="ARD_RLT" pad="4"/>
 <contactref element="COLOR_IN" pad="1"/>
 <contactref element="COLOR_OUT" pad="1"/>
-<contactref element="R6" pad="P$2"/>
-<wire x1="42.19" y1="13.81" x2="84" y2="58" width="0" layer="19" extent="1-1"/>
-<wire x1="9.62" y1="18" x2="42.19" y2="13.81" width="0" layer="19" extent="1-1"/>
-<wire x1="2.73" y1="27" x2="9.62" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="58" x2="2.73" y2="27" width="0" layer="19" extent="1-1"/>
-<wire x1="9.81" y1="14" x2="9.62" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="9.62" y1="18" x2="9" y2="62" width="0" layer="19" extent="1-1"/>
+<wire x1="75" y1="62" x2="9.62" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="2.73" y1="27" x2="9" y2="62" width="0" layer="19" extent="1-1"/>
+<wire x1="42.19" y1="13.81" x2="2.73" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT2">
 <contactref element="BIT2" pad="A"/>
@@ -1238,12 +1174,10 @@ design rules under a new name.</description>
 <contactref element="ARD_RLT" pad="5"/>
 <contactref element="COLOR_IN" pad="2"/>
 <contactref element="COLOR_OUT" pad="2"/>
-<contactref element="R7" pad="P$2"/>
-<wire x1="44.73" y1="13.81" x2="84" y2="60.54" width="0" layer="19" extent="1-1"/>
-<wire x1="12.16" y1="18" x2="44.73" y2="13.81" width="0" layer="19" extent="1-1"/>
-<wire x1="9.73" y1="27" x2="12.16" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="60.54" x2="9.73" y2="27" width="0" layer="19" extent="1-1"/>
-<wire x1="9.81" y1="6" x2="12.16" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="12.16" y1="18" x2="9" y2="64.54" width="0" layer="19" extent="1-1"/>
+<wire x1="75" y1="64.54" x2="12.16" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="9.73" y1="27" x2="75" y2="64.54" width="0" layer="19" extent="1-1"/>
+<wire x1="44.73" y1="13.81" x2="9.73" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT1">
 <contactref element="BIT1" pad="A"/>
@@ -1251,12 +1185,10 @@ design rules under a new name.</description>
 <contactref element="ARD_RLT" pad="6"/>
 <contactref element="COLOR_IN" pad="3"/>
 <contactref element="COLOR_OUT" pad="3"/>
-<contactref element="R8" pad="P$2"/>
-<wire x1="47.27" y1="13.81" x2="84" y2="63.08" width="0" layer="19" extent="1-1"/>
-<wire x1="14.7" y1="18" x2="47.27" y2="13.81" width="0" layer="19" extent="1-1"/>
+<wire x1="14.7" y1="18" x2="9" y2="67.08" width="0" layer="19" extent="1-1"/>
+<wire x1="75" y1="67.08" x2="14.7" y2="18" width="0" layer="19" extent="1-1"/>
 <wire x1="16.73" y1="27" x2="14.7" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="63.08" x2="16.73" y2="27" width="0" layer="19" extent="1-1"/>
-<wire x1="20.81" y1="14" x2="14.7" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="47.27" y1="13.81" x2="16.73" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT0">
 <contactref element="BIT0" pad="A"/>
@@ -1264,12 +1196,10 @@ design rules under a new name.</description>
 <contactref element="ARD_RLT" pad="7"/>
 <contactref element="COLOR_IN" pad="4"/>
 <contactref element="COLOR_OUT" pad="4"/>
-<contactref element="R9" pad="P$2"/>
-<wire x1="49.81" y1="13.81" x2="84" y2="65.62" width="0" layer="19" extent="1-1"/>
-<wire x1="23.73" y1="27" x2="49.81" y2="13.81" width="0" layer="19" extent="1-1"/>
-<wire x1="17.24" y1="18" x2="23.73" y2="27" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="65.62" x2="23.73" y2="27" width="0" layer="19" extent="1-1"/>
-<wire x1="20.81" y1="6" x2="17.24" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="17.24" y1="18" x2="9" y2="69.62" width="0" layer="19" extent="1-1"/>
+<wire x1="75" y1="69.62" x2="17.24" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="23.73" y1="27" x2="17.24" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="49.81" y1="13.81" x2="23.73" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="BIT0" pad="K"/>
@@ -1302,10 +1232,10 @@ design rules under a new name.</description>
 <contactref element="S1" pad="1"/>
 <contactref element="COLOR_IN" pad="5"/>
 <contactref element="COLOR_OUT" pad="5"/>
-<wire x1="12.16" y1="2" x2="9" y2="68.16" width="0" layer="19" extent="1-1"/>
-<wire x1="84" y1="68.16" x2="12.16" y2="2" width="0" layer="19" extent="1-1"/>
+<wire x1="12.16" y1="2" x2="9" y2="72.16" width="0" layer="19" extent="1-1"/>
+<wire x1="75" y1="72.16" x2="12.16" y2="2" width="0" layer="19" extent="1-1"/>
 <wire x1="34.73" y1="27" x2="12.16" y2="2" width="0" layer="19" extent="1-1"/>
-<wire x1="46.7394" y1="23.7488" x2="34.73" y2="27" width="0" layer="19" extent="1-1"/>
+<wire x1="41.7488" y1="29.2606" x2="34.73" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="S1" pad="4"/>
@@ -1318,56 +1248,56 @@ design rules under a new name.</description>
 <contactref element="ADDRESS_IN" pad="15"/>
 <contactref element="ADDRESS_OUT" pad="15"/>
 <wire x1="5" y1="75.78" x2="20.35" y2="45.19" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="75.78" x2="5" y2="75.78" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="75.78" x2="5" y2="75.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT9">
 <contactref element="SHIFT_MASTER" pad="6"/>
 <contactref element="ADDRESS_IN" pad="13"/>
 <contactref element="ADDRESS_OUT" pad="13"/>
 <wire x1="5" y1="73.24" x2="17.81" y2="45.19" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="73.24" x2="5" y2="73.24" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="73.24" x2="5" y2="73.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT10">
 <contactref element="SHIFT_MASTER" pad="5"/>
 <contactref element="ADDRESS_IN" pad="11"/>
 <contactref element="ADDRESS_OUT" pad="11"/>
 <wire x1="5" y1="70.7" x2="15.27" y2="45.19" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="70.7" x2="5" y2="70.7" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="70.7" x2="5" y2="70.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT11">
 <contactref element="SHIFT_MASTER" pad="4"/>
 <contactref element="ADDRESS_IN" pad="9"/>
 <contactref element="ADDRESS_OUT" pad="9"/>
 <wire x1="5" y1="68.16" x2="12.73" y2="45.19" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="68.16" x2="5" y2="68.16" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="68.16" x2="5" y2="68.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT12">
 <contactref element="SHIFT_MASTER" pad="13"/>
 <contactref element="ADDRESS_IN" pad="7"/>
 <contactref element="ADDRESS_OUT" pad="7"/>
 <wire x1="5" y1="65.62" x2="12.73" y2="52.81" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="65.62" x2="5" y2="65.62" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="65.62" x2="5" y2="65.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT13">
 <contactref element="SHIFT_MASTER" pad="14"/>
 <contactref element="ADDRESS_IN" pad="5"/>
 <contactref element="ADDRESS_OUT" pad="5"/>
 <wire x1="5" y1="63.08" x2="10.19" y2="52.81" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="63.08" x2="5" y2="63.08" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="63.08" x2="5" y2="63.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT14">
 <contactref element="SHIFT_MASTER" pad="15"/>
 <contactref element="ADDRESS_IN" pad="3"/>
 <contactref element="ADDRESS_OUT" pad="3"/>
 <wire x1="5" y1="60.54" x2="7.65" y2="52.81" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="60.54" x2="5" y2="60.54" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="60.54" x2="5" y2="60.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT15">
 <contactref element="SHIFT_MASTER" pad="1"/>
 <contactref element="ADDRESS_IN" pad="1"/>
 <contactref element="ADDRESS_OUT" pad="1"/>
 <wire x1="5" y1="58" x2="5.11" y2="45.19" width="0" layer="19" extent="1-1"/>
-<wire x1="80" y1="58" x2="5" y2="58" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="58" x2="5" y2="58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_SERIAL_INPUT">
 <contactref element="SHIFT_MASTER" pad="11"/>
@@ -1390,57 +1320,60 @@ design rules under a new name.</description>
 <contactref element="SHIFT_SLAVE" pad="7"/>
 <contactref element="ADDRESS_IN" pad="16"/>
 <contactref element="ADDRESS_OUT" pad="16"/>
-<wire x1="44.35" y1="45.19" x2="77.46" y2="75.78" width="0" layer="19" extent="1-1"/>
-<wire x1="2.46" y1="75.78" x2="44.35" y2="45.19" width="0" layer="19" extent="1-1"/>
+<wire x1="44.35" y1="45.19" x2="80.46" y2="75.78" width="0" layer="19" extent="1-1"/>
+<wire x1="2.46" y1="75.78" x2="80.46" y2="75.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT1">
 <contactref element="SHIFT_SLAVE" pad="6"/>
 <contactref element="ADDRESS_IN" pad="14"/>
 <contactref element="ADDRESS_OUT" pad="14"/>
-<wire x1="41.81" y1="45.19" x2="77.46" y2="73.24" width="0" layer="19" extent="1-1"/>
-<wire x1="2.46" y1="73.24" x2="41.81" y2="45.19" width="0" layer="19" extent="1-1"/>
+<wire x1="41.81" y1="45.19" x2="80.46" y2="73.24" width="0" layer="19" extent="1-1"/>
+<wire x1="2.46" y1="73.24" x2="80.46" y2="73.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT2">
 <contactref element="SHIFT_SLAVE" pad="5"/>
 <contactref element="ADDRESS_IN" pad="12"/>
 <contactref element="ADDRESS_OUT" pad="12"/>
-<wire x1="39.27" y1="45.19" x2="77.46" y2="70.7" width="0" layer="19" extent="1-1"/>
-<wire x1="2.46" y1="70.7" x2="39.27" y2="45.19" width="0" layer="19" extent="1-1"/>
+<wire x1="80.46" y1="70.7" x2="2.46" y2="70.7" width="0" layer="19" extent="1-1"/>
+<wire x1="39.27" y1="45.19" x2="80.46" y2="70.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT3">
 <contactref element="SHIFT_SLAVE" pad="4"/>
 <contactref element="ADDRESS_IN" pad="10"/>
 <contactref element="ADDRESS_OUT" pad="10"/>
-<wire x1="36.73" y1="45.19" x2="77.46" y2="68.16" width="0" layer="19" extent="1-1"/>
-<wire x1="2.46" y1="68.16" x2="36.73" y2="45.19" width="0" layer="19" extent="1-1"/>
+<wire x1="80.46" y1="68.16" x2="2.46" y2="68.16" width="0" layer="19" extent="1-1"/>
+<wire x1="36.73" y1="45.19" x2="80.46" y2="68.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT4">
 <contactref element="SHIFT_SLAVE" pad="13"/>
 <contactref element="ADDRESS_IN" pad="8"/>
 <contactref element="ADDRESS_OUT" pad="8"/>
-<wire x1="77.46" y1="65.62" x2="2.46" y2="65.62" width="0" layer="19" extent="1-1"/>
-<wire x1="36.73" y1="52.81" x2="77.46" y2="65.62" width="0" layer="19" extent="1-1"/>
+<wire x1="80.46" y1="65.62" x2="2.46" y2="65.62" width="0" layer="19" extent="1-1"/>
+<wire x1="36.73" y1="52.81" x2="80.46" y2="65.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT5">
 <contactref element="SHIFT_SLAVE" pad="14"/>
 <contactref element="ADDRESS_IN" pad="6"/>
 <contactref element="ADDRESS_OUT" pad="6"/>
-<wire x1="77.46" y1="63.08" x2="2.46" y2="63.08" width="0" layer="19" extent="1-1"/>
-<wire x1="34.19" y1="52.81" x2="77.46" y2="63.08" width="0" layer="19" extent="1-1"/>
+<wire x1="80.46" y1="63.08" x2="2.46" y2="63.08" width="0" layer="19" extent="1-1"/>
+<wire x1="34.19" y1="52.81" x2="80.46" y2="63.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT6">
 <contactref element="SHIFT_SLAVE" pad="15"/>
 <contactref element="ADDRESS_IN" pad="4"/>
 <contactref element="ADDRESS_OUT" pad="4"/>
-<wire x1="77.46" y1="60.54" x2="2.46" y2="60.54" width="0" layer="19" extent="1-1"/>
-<wire x1="31.65" y1="52.81" x2="77.46" y2="60.54" width="0" layer="19" extent="1-1"/>
+<wire x1="80.46" y1="60.54" x2="2.46" y2="60.54" width="0" layer="19" extent="1-1"/>
+<wire x1="31.65" y1="52.81" x2="80.46" y2="60.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDRESS_BIT7">
 <contactref element="SHIFT_SLAVE" pad="1"/>
 <contactref element="ADDRESS_IN" pad="2"/>
 <contactref element="ADDRESS_OUT" pad="2"/>
-<wire x1="77.46" y1="58" x2="2.46" y2="58" width="0" layer="19" extent="1-1"/>
-<wire x1="29.11" y1="45.19" x2="77.46" y2="58" width="0" layer="19" extent="1-1"/>
+<wire x1="80.46" y1="58" x2="2.46" y2="58" width="0" layer="19" extent="1-1"/>
+<wire x1="29.11" y1="45.19" x2="80.46" y2="58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$45">
+<contactref element="SHIFT_SLAVE" pad="11"/>
 </signal>
 <signal name="ADDRESS_LATCH">
 <contactref element="SHIFT_MASTER" pad="9"/>
